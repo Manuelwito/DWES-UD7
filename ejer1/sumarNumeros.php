@@ -1,13 +1,13 @@
 <?php 
 // Instanciamos un nuevo servidor SOAP
-$uri="https://www.raulprietofernandez.net/images/blog/211/DNI/";
+$uri="192.168.129.140";
 $server = new SoapServer(null,array('uri'=>$uri));
-$server->addFunction("letra");
+$server->addFunction("sumarNumeros");
 $server->handle();
 
 // Función para obtener raíz cuadrada
-function letra($dni) {
-    $resultado=substr("TRWAGMYFPDXBNJZSQVHLCKE",$dni%23,1);
+function sumarNumeros($num1, $num2) {
+    $resultado=$num1+$num2;
     return $resultado;
 }
 ?>
