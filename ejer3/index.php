@@ -10,7 +10,7 @@ $poblacion = "";
 $url = "http://localhost/DWES-UD7/ejer3/muestraCiudades.php";
 $uri = "http://localhost/DWES-UD7/ejer3/";
 $cliente = new SoapClient(null, array('location' => $url, 'uri' => $uri));
-var_dump($cliente);
+
 // Ejecutamos las siguientes líneas al enviar el formulario
 if (isset($_POST['enviar'])) {
     // Establecemos los parámetros de envío
