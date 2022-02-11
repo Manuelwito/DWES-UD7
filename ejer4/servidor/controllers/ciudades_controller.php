@@ -5,7 +5,7 @@
     $server->handle();
 
     function getCiudades($num)
-{  
+{   echo "wtf";
     //incluimos el modelo
     include './models/ciudades_model.php';
     getCiudadesFiltro($num);
