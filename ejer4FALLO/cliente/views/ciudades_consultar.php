@@ -9,7 +9,7 @@
 <body>
     <h1>Obtener ciudades según número de población</h1>
     <h2>Servicio Web + PHP + SOAP</h2>
-    <form action="index.php?controller=ciudades&action=consultar" method="post"> 
+    <form action="index.php?controller=ciudades&action=mostrar" method="post"> 
     <?php 
         print "<input type='text' name='numero'>";
         print "<input type='submit' name='enviar' value='Mostrar ciudades por población'>";
